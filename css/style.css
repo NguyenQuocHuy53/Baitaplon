@@ -1,0 +1,189 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+	cursor: pointer;
+}
+
+a:hover{
+	color: #31b822f4;
+}
+
+
+.main{
+	padding: 0 50px;
+}
+
+.main > div{
+	padding: 10px;
+	margin: 10px auto;
+	text-align: center;
+}
+
+.list-khuyenmai{
+	text-align: center;
+}
+
+.list-khuyenmai img{
+	width: 80%;
+}
+
+.list-khuyenmai p{
+	margin: 5px auto;
+	font-family: 'Prompt', sans-serif;
+}
+
+.khuyenmai{
+	border: 2px solid #3ce408;
+}
+
+.khuyenmai > div > h4{
+	padding-bottom: 5px;
+	margin: 5px auto 25px;
+    display: inline-block;
+    border-bottom: 2px solid #3ce408;
+    font-family: 'Jura', sans-serif;
+}
+
+.before-price{
+	text-decoration: line-through;
+}
+
+.after-price{
+	color: #ed3237;
+}
+
+.product{
+	border: 2px solid #eee;
+}
+
+.product > div > h4{
+	padding-bottom: 5px;
+	margin: 5px auto 25px;
+    display: inline-block;
+    border-bottom: 2px solid #3ce408;
+    font-family: 'Jura', sans-serif;
+}
+
+.list-product{
+    margin: auto;
+}
+
+.list-product img{
+	width: 80%;
+}
+
+.list-product p{
+	margin: 5px auto;
+	font-family: 'Prompt', sans-serif;
+}
+
+.item{
+	padding: 5px 10px;
+}
+
+.item:hover{
+	background-color: #eee;
+}
+
+.item p{
+	text-align: left;
+} 
+
+.samsung{
+	border: 2px solid #5eed32;
+}
+
+.price{
+	color: #ed3237;
+	font-family: 'Prompt', sans-serif;
+}
+
+/* slide */
+.carousel-item > img{
+	/*height: 270px;*/
+}
+/* end slide*/
+
+/* notification */
+.sec-notification{
+	position: fixed;
+    width: auto;
+}
+
+.sec-notification > div{
+	margin-bottom: 5px;
+	/*display: none;*/
+}
+/* end notification */
+
+/* */
+.section-quantity{
+	margin: 10px 0;
+}
+
+.section-quantity > a, .section-quantity > span{
+	display: inline-block;
+	margin: 0;
+	padding: 5px;
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    text-align: center;
+    border: none;
+}
+
+.btn-custom{
+	margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #ed3237;
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    border-radius: 5px; 
+}
+
+.btn-custom:hover{
+	background-color: transparent;
+	border: 1px solid #ed3237;
+	color: #ed3237;
+}
+
+.title{
+	display: inline-block;
+    padding-bottom: 5px;
+    border-bottom: 3px solid #ed3237;
+    margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 991px) {
+  	.space{
+  		display: none;
+	}
+	.sec-notification{
+	    bottom: 0;
+	    right: 0;
+	    padding-bottom: 0;
+	}
+	
+}
+
+@media only screen and (min-width: 992px) {
+	.sec-notification{
+	    top: 0;
+	    left: 50%;
+	    transform: translate(-50%, 0);
+	    /*padding-bottom: 0;*/
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+	.sec-relate{
+		display: none;
+	}
+}

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- sửa title -->
+	<title>Đăng ký sản phẩm</title>
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap/bootstrap.min.css">
+	<script type="text/javascript" scr="./js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="./js/popper.min.js"></script>
+	<script type="text/javascript" src="./js/bootstrap/bootstrap.min.js"></script>
+	<script src="https://kit.fontawesome.com/e3ed4ab9af.js" crossorigin="anonymous"></script>
+    
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Jura:wght@700&family=Oi&family=Pacifico&family=Prompt&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./css/header.css">
+	<link rel="stylesheet" type="text/css" href="./css/footer.css">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link rel="stylesheet" href="./css/dangky.css">
+	
+    <!-- liên kết đến file js và css ở đây -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+	<!-- end -->
+</head>
+<body>
+	<!-- header -->
+	<div class="row header">
+		<div class="col-xl-4 col-sm-12 logo">
+			<a href="index.html"><h3>Cửa Hàng APPLE SAMSUNG chính hãng</h3></a>
+		</div>
+		<div class="col-xl-2 col-sm-12 search">
+			<form action="" onsubmit="return false">
+				<input type="text" id="txt-search" name="search" placeholder="Nội dung tìm kiếm">
+				<button type="submit" class="btn-search"><i class="fas fa-search"></i></button>
+			</form>
+			
+		</div>
+		<div class="col-xl-6 col-sm-12">
+			<ul class="menu">
+				<li><a href="#" class="sanpham" data-type="apple"><i class="fab fa-apple" style="font-size: 25px;"></i>Apple</a></li>
+				<li><a href="#" class="sanpham" data-type="samsung"><i class="fas fa-mobile-alt" style="font-size: 20px;"></i>Samsung</a></li>
+				<li class="item-giohang"><a  href="giohang.html"><i class="fas fa-shopping-cart"></i> Giỏ hàng</a></li>
+				<li><a href="gioithieu.html"><i class="fas fa-info"  style="font-size: 20px;"></i>Giới thiệu</a></li>
+			</ul>
+			<div class="btn-group user">
+				<button type="button" class="btn dropdown-toggle acction-user" data-bs-toggle="dropdown" aria-expanded="false">
+					Xin chào
+				</button>
+				<ul class="dropdown-menu">
+					<li class="item-dangky"><a class="dropdown-item a-register" href="dangky.html"><i class="fas fa-user-plus"></i> Đăng ký</a></li>
+					<li class="item-dangnhap"><a class="dropdown-item a-login" href="dangnhap.html"><i class="fas fa-sign-in-alt" style="margin-right: 3px;" ></i> Đăng nhập</a></li>
+					<li class="item-dangxuat"><hr class="dropdown-divider"></li>
+    				<li class="item-dangxuat"><a class="dropdown-item btn-logout" href="#"  style="color: #ed3237"><i class="fas fa-sign-out-alt"></i> Đăng xuất</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- end header -->
+	<!-- content -->
+	<div class="row main">
+		<!-- code vào đây -->
+		
+		      <!--dang ky-->
+			  <div class="center-align ">
+				<div class-="form-control center-align">
+
+					<form action="" class="form sign-up" onsubmit="return false">
+						<h1 class="title">Đăng ký</h1>
+						<div class="input-group">
+							<i class='bx bxs-user-rectangle'></i>
+							<input type="text" name="phone" placeholder="số điện thoại" autofocus="autofocus">
+							
+						</div>
+						<!-- <div class="input-group">
+							<i class='bx bxs-envelope'></i>
+							<input type="email" placeholder="email">
+						</div> -->
+						<div class="input-group">
+							<i class='bx bx-lock-open-alt'></i>
+							<input type="password" name="pass" placeholder="mật khẩu">
+							
+						</div>
+						<div class="input-group">
+							<i class='bx bx-lock-open-alt'></i>
+							<input type="password" name="repass" placeholder="nhập lại mật khẩu">
+							
+						</div>
+						<p class="msg"></p>
+						<button class="btn btn-control btn-custom btn-register">
+							Đăng ký
+						</button>
+						<p>
+							<span>
+								Đã có tài khoản ?
+							</span>
+							<a class="color-a"href="./dangnhap.html">
+								<b onclick="toggle()">
+									Đăng nhập ngay
+								</b></a>
+							<b onclick="toggle()">
+						</p>
+					</form>
+				</div>  
+			</div>
+			<!--het dang ky-->
+		
+
+	</div>
+	<!-- end content -->
+	<!-- footer -->
+	<div class="row footer">
+		<div class="col-sm-3 col-3">
+		<h4>Liên kết chính</h4>
+			<p><a href="index.html">Trang chủ</a></p>
+			<p><a href="gioithieu.html">Giới thiệu</a></p>
+			<p><a href="sanpham.html">Sản phẩm</a></p>
+			<p><a href="dangky.html">Đăng ký</a></p>
+			
+			<p></p>
+		</div>
+		<div class="col-sm-3 col-3">
+			<h4>Liên kết phụ</h4>
+			<p><a href="timkiem.html">Tìm kiếm</a></p>
+			<p><a href="giohang.html">Giỏ hàng</a></p>
+			<p><a href="dangnhap.html">Đăng nhập</a></p>
+			<p></p>
+		</div>
+		<div class="col-sm-3 col-3">
+			<h4>Thông tin liên lạc</h4>
+			<p>Gọi mua hàng: <a href="tel:1900 90 90 90">1900 90 90 90</a></p>
+			<p>Khiếu nại, góp ý: <a href="tel:1900 90 90 90">1900 90 90 90</a></p>
+			<p>Thời gian phục vụ: 8h - 22h</p>
+			<p>Email: <a href="mailto:nguyenhuy3684@gmail.com">nhom25</a></p>
+		</div>
+		<div class="col-sm-3 col-3">
+			<h4>Thông tin hỗ trợ</h4>
+			<p><a href="#">Bảo hành chính hãng</a></p>
+			<p><a href="#">Chính sách đổi trả</a></p>
+			<p><a href="#">Chính sách bảo hành</a></p>
+			<p></p>
+		</div>
+	</div>
+	<!-- end footer -->
+	<script src="./js/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="./js/data.js"></script>
+	<script src="./js/main.js"></script>
+	<!-- <script src="../js/dangnhap.js"></script> -->
+	<script type="text/javascript">
+		// localStorage.clear();
+		$('.btn-register').click(function(){
+
+			var phone = removeAscent($('[name=phone]').val());
+			var pass = $('[name=pass]').val();
+			var repass = $('[name=repass]').val();
+			
+			// alert("h");
+			if(!check_regex_2(phone, /^0[1-9]\d{8}$/, "Số điện thoại không hợp lệ")){
+				$('[name=phone]').focus();
+				return;
+			}
+
+			if(!check_regex_2(pass, /^[a-zA-Z0-9]{8,}$/, "Mật khẩu chỉ bao gồm chữ hoa, chữ thường, chữ số và ít nhất 8 ký tự")){
+				$('[name=pass]').focus();
+				return;
+			}
+
+			if(pass != repass){
+				$('[name=repass]').focus();
+				$('.msg').text("Nhập lại mật khẩu không trùng!");
+				return;	
+			}
+			$('.msg').text("");
+
+			// lưu account vào localstorage
+			var account_list;
+			try{
+				account_list = JSON.parse(localStorage["account"]);
+			}catch{
+				account_list = new Array();
+			}
+			// console.log(account_list);
+			// kiểm tra xem tài khoản đã tồn tại chưa
+			for(var i =0; i<account_list.length; i++){
+				if(account_list[i]["phone"] == phone && account_list[i]["pass"] == ""){
+					account_list[i]["pass"] = pass;
+					localStorage["account"] = JSON.stringify(account_list);
+					return;
+				}else if(account_list[i]["phone"] == phone){
+					$('.msg').text("Số điện thoại đã tồn tại");
+					return;
+				}
+			}
+			account_list.push({"phone": phone, "pass": pass, "name":"", "address": "", "gender": ""});
+			localStorage["account"] = JSON.stringify(account_list);
+			window.location.href = "dangnhap.html";
+		});
+
+		function check_regex_2(str, pattern, msg){
+			str = removeAscent(str);
+			if(pattern.test(str) == false){
+				$('.msg').text(msg);
+				return false;
+			}
+			return true;
+		}
+		
+	</script>
+</body>
+
+
+</html>

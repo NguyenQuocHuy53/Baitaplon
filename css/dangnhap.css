@@ -1,0 +1,240 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+#container{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.color-a {
+  color: black;
+}
+html,
+body {
+  min-height: 100vh;
+  overflow: hidden;
+  font-family: "Helvetica Neue";
+}
+
+.container {
+  position: initial;
+  overflow: hidden;
+  padding: 200px 20px;
+}
+
+
+
+.center-align {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.form-control {
+  width: 100%;
+  max-width: 20.6rem;
+}
+.form {
+  padding: 1rem;
+  background-color: #ffff;
+  border-radius: 20px;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 15px;
+  transform: scale(0);
+  transition: 0.5s ease-in-out;
+  transition-delay: .2s;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 100%;
+  max-width: 1rem 0;
+  margin: 1rem 0;
+}
+.input-group i {
+  top: 50%;
+  left: 1rem;
+  position: absolute;
+  transform: translateX(-50%);
+  font-size: 1.4rem;
+  margin: -0.6rem 0.6rem;
+  background-color: white;
+}
+.input-group input {
+  width: 100%;
+  padding: 1rem 3rem;
+  background-color: white;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  outline: none;
+}
+
+.input-group input:focus {
+  border: 2px solid #ed3237;
+}
+.form{
+  width: 350px;
+}
+
+.form button {
+  cursor: pointer;
+  width: 100%;
+  padding: 0.8rem 0;
+  margin: 0;
+  /*background-color: #046d27;*/
+  outline: none;
+  color: white;
+  border-radius:0.5rem;
+}
+
+form button:hover {
+  opacity: 0.9;
+}
+.form p {
+  margin: 1rem 0;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.socical-list {
+  margin: 2rem 0;
+  padding: 1rem;
+  border-radius: 1.5rem;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transform: scale(0);
+  transition: 0.5s ease-in-out;
+  transition-delay: 0.2s;
+}
+.flex-col {
+  flex-direction: column;
+}
+
+.socical-list > div {
+  color: #000;
+  margin: 0 0.5rem;
+  padding: 0.7rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transform: scale(0);
+  transition: 0.5s ease-in-out;
+}
+
+.socical-list > div:nth-child(1) {
+  transition-delay: 0.6s;
+}
+
+.socical-list > div:nth-child(2) {
+  transition-delay: 0.8s;
+}
+
+.socical-list > div:nth-child(3) {
+  transition-delay: 1s;
+}
+
+.socical-list > div:nth-child(4) {
+  transition-delay: 1.2s;
+}
+
+.socical-list > div > i {
+  font-size: 1.5rem;
+  transition: 0.4s ease-in-out;
+}
+
+.socical-list > div:hover i {
+  transform: scale(1.5);
+}
+
+.facebook-icon {
+  background-color: rgb(30, 78, 235);
+}
+.google-icon {
+  background-color: #fc0000;
+}
+.pt-icon {
+  background-color: rgb(245, 7, 7);
+}
+.github-icon {
+  background-color: rgb(0, 0, 0);
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.container.sign-in .form.sign-in,
+.container.sign-in .socical-list.sign-in,
+.container.sign-in .socical-list.sign-in > div,
+.container.sign-up .form.sign-up,
+.container.sign-up .socical-list.sign-up,
+.container.sign-up .socical-list.sign-up > div {
+  transform: scale(1);
+}
+
+.content-row {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 6;
+  width: 100%;
+}
+
+.text {
+  margin: 2rem;
+  color: white;
+}
+
+.text h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin: 1rem 0;
+  transition: 1s ease-in-out;
+}
+.text p {
+  width: 30rem;
+  font-weight: 600;
+  transition: 1s ease-in-out;
+  transition-delay: 0.2s;
+}
+.img img {
+  width: 30vw;
+  transition: 1s ease-in-out;
+  transition-delay: 0.4s;
+}
+
+.text h2,
+.text p,
+.img img {
+  transition: 1s ease-in-out;
+  transition-delay: 0.4s;
+}
+
+.text.sign-in h2,
+.text.sign-in p,
+.img.sign-in img {
+  transform: translateX(-150%);
+}
+
+.text.sign-up h2,
+.text.sign-up p,
+.img.sign-up img {
+  transform: translateX(150%);
+}
+.container.sign-in .text.sign-in h2,
+.container.sign-in .text.sign-in p,
+.container.sign-in .img.sign-in img,
+.container.sign-up .text.sign-up h2,
+.container.sign-up .text.sign-up p,
+.container.sign-up .img.sign-up img {
+  transform: translateX(0);
+}
+

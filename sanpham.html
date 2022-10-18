@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sản phẩm</title>
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap/bootstrap.min.css">
+	<script type="text/javascript" scr="./js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="./js/popper.min.js"></script>
+	<script type="text/javascript" src="./js/bootstrap/bootstrap.min.js"></script>
+	<script src="https://kit.fontawesome.com/e3ed4ab9af.js" crossorigin="anonymous"></script>
+    
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Jura:wght@700&family=Oi&family=Pacifico&family=Prompt&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./css/header.css">
+	<link rel="stylesheet" type="text/css" href="./css/footer.css">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link rel="stylesheet" href="./css/sanpham.css">
+	<style type="text/css">
+		.product{
+			border: 2px solid #3ce408;
+		}
+	</style>
+</head>
+<body >
+	<!-- header -->
+	<div class="row header">
+		<div class="col-xl-4 col-sm-12 logo">
+			<a href="index.html"><h3>Cửa Hàng APPLE SAMSUNG chính hãng</h3></a>
+		</div>
+		<div class="col-xl-2 col-sm-12 search">
+			<form action="" onsubmit="return false">
+				<input type="text" id="txt-search" name="search" placeholder="Nội dung tìm kiếm">
+				<button type="submit" class="btn-search"><i class="fas fa-search"></i></button>
+			</form>
+			
+		</div>
+		<div class="col-xl-6 col-sm-12">
+			<ul class="menu">
+				<li><a href="#" class="sanpham" data-type="apple"><i class="fab fa-apple" style="font-size: 25px;"></i>Apple</a></li>
+				<li><a href="#" class="sanpham" data-type="samsung"><i class="fas fa-mobile-alt" style="font-size: 20px;"></i>Samsung</a></li>
+				<li class="item-giohang"><a  href="giohang.html"><i class="fas fa-shopping-cart"></i> Giỏ hàng</a></li>
+				<li><a href="gioithieu.html"><i class="fas fa-info"  style="font-size: 20px;"></i>Giới thiệu</a></li>
+			</ul>
+			<div class="btn-group user">
+				<button type="button" class="btn dropdown-toggle acction-user" data-bs-toggle="dropdown" aria-expanded="false">
+					Xin chào
+				</button>
+				<ul class="dropdown-menu">
+					<li class="item-dangky"><a class="dropdown-item a-register" href="dangky.html"><i class="fas fa-user-plus"></i> Đăng ký</a></li>
+					<li class="item-dangnhap"><a class="dropdown-item a-login" href="dangnhap.html"><i class="fas fa-sign-in-alt" style="margin-right: 3px;" ></i> Đăng nhập</a></li>
+					<li class="item-dangxuat"><hr class="dropdown-divider"></li>
+    				<li class="item-dangxuat"><a class="dropdown-item btn-logout" href="#"  style="color: #ed3237"><i class="fas fa-sign-out-alt"></i> Đăng xuất</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- end header -->
+	<!-- content -->
+	<div class="row main">
+		<!-- banner -->
+		<div class="row banner">
+			<div class="col-lg-8">
+				<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" >
+					<div class="carousel-indicators">
+						<button style="background-color: black;" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+						<button style="background-color: black;" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+						<button style="background-color: black;" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+					</div>
+					<div class="carousel-inner">
+						<div class="carousel-item active" >
+							<a href="chitietsanpham.html?id=10">
+								<img src="./images/Bia14promax.png" class="d-block w-100" alt="...">
+							</a>
+						</div>
+						<div class="carousel-item">
+							<a href="chitietsanpham.html?id=15">
+								<img src="./images/biaip13.png" class="d-block w-100" alt="...">
+							</a>
+						</div>
+						<div class="carousel-item">
+							<a href="">
+								<img src="./images/biasamsung.png" class="d-block w-100" alt="...">
+							</a>
+						</div>
+					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+						<!-- <span class="carousel-control-prev-icon" 
+							aria-hidden="true"></span> -->
+						<i class="fas fa-chevron-left" style="color: black;font-size: 30px;"></i>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+						<i class="fas fa-chevron-right" style="color: black;font-size: 30px;"></i>
+						<!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+						<span class="visually-hidden">Next</span>
+					</button>
+				</div>
+				<!-- <img src="../images/BÌA-IP-12-1.png" style="width: 100%; height: 100%;"> -->
+			</div>
+			<div class="col-lg-4">
+				<div class="row">
+					<a href="">
+						<img src="./images/biasamsung.png" style="width: 100%">
+					</a>
+				</div>
+				<div class="row">
+					<a href="chitietsanpham.html?id=13">
+						<img src="./images/biaip13.png" style="width: 100%">
+					</a>
+				</div>
+			</div>
+		</div>
+		<!-- end banner -->
+
+		<!-- phần lọc -->
+		<div class="Loc">
+
+			<div class="filter">
+				<!-- <label for="cars">Sắp xếp theo thứ tự:</label>
+				  <select id="cars" name="cars">
+					<option value="Giảm">Giá giảm dần </option>
+					<option value="Tăng">Giá tăng dần</option>
+				  </select> -->
+				<div class="btn-group">
+				  	<button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+				  		Sắp xếp theo
+				  	</button>
+				  	<ul class="dropdown-menu">
+				  		<li><a class="dropdown-item sort" data-sort="desc">Giá giảm dần</a></li>
+				  		<li><a class="dropdown-item sort" data-sort="insc">Giá tăng dần</a></li>
+				  	</ul>
+				</div>
+			</div>					
+
+			<div class="filter">
+				<div class="btn-group">
+				  	<button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+				  		Lọc theo giá
+				  	</button>
+				  	<ul class="dropdown-menu">
+				  		<li><a class="dropdown-item filter-price"data-start="0" data-end="1000000000">Tất cả</a></li>
+				  		<li><a class="dropdown-item filter-price"data-start="0" data-end="5000000">Dưới 5 triệu</a></li>
+				  		<li><a class="dropdown-item filter-price"data-start="5000000" data-end="10000000">Từ 5-10 triệu</a></li>
+				  		<li><a class="dropdown-item filter-price"data-start="10000000" data-end="20000000">Từ 10-20 triệu</a></li>
+				  		<li><a class="dropdown-item filter-price"data-start="20000000" data-end="1000000000">Trên 20 triệu</a></li>
+				  	</ul>
+				</div>
+			</div>					
+		</div>
+		<!-- hết phần lọc -->
+		
+		<!-- apple -->
+		<div class="row product apple">
+			<div>
+				<h4>Apple</h4>
+			</div>
+			<p class="hetSp" style="font-size: -webkit-xxx-large;display: none">Không có sản phẩm phù hợp</p>
+			<div class="row list-product">
+				
+			</div>
+		</div>
+		<!-- end apple -->
+		<!-- samsung -->
+		<div class="row product samsung">
+			<div>
+				<h4>Samsung</h4>
+			</div>
+			<p class="hetSp" style="font-size: -webkit-xxx-large;display: none">Không có sản phẩm phù hợp</p>
+			<div class="row list-product">
+				
+			</div>
+		</div>
+		<!-- end samsung -->
+	</div>
+	<!-- footer -->
+	<div class="row footer">
+		<div class="col-sm-3 col-3">
+			<h4>Liên kết chính</h4>
+			<p><a href="index.html">Trang chủ</a></p>
+			<p><a href="gioithieu.html">Giới thiệu</a></p>
+			<p><a href="sanpham.html">Sản phẩm</a></p>
+			<p><a href="dangky.html">Đăng ký</a></p>
+			
+			<p></p>
+		</div>
+		<div class="col-sm-3 col-3">
+			<h4>Liên kết phụ</h4>
+			<p><a href="timkiem.html">Tìm kiếm</a></p>
+			<p><a href="giohang.html">Giỏ hàng</a></p>
+			<p><a href="dangnhap.html">Đăng nhập</a></p>
+			<p></p>
+		</div>
+		<div class="col-sm-3 col-3">
+			<h4>Thông tin liên lạc</h4>
+			<p>Gọi mua hàng: <a href="tel:1900 90 90 90">1900 90 90 90</a></p>
+			<p>Khiếu nại, góp ý: <a href="tel:1900 90 90 90">1900 90 90 90</a></p>
+			<p>Thời gian phục vụ: 8h - 22h</p>
+			<p>Email: <a href="mailto:nguyenhuy3684@gmail.com">nhom25</a></p>
+		</div>
+		<div class="col-sm-3 col-3">
+			<h4>Thông tin hỗ trợ</h4>
+			<p><a href="#">Bảo hành chính hãng</a></p>
+			<p><a href="#">Chính sách đổi trả</a></p>
+			<p><a href="#">Chính sách bảo hành</a></p>
+			<p></p>
+		</div>
+		
+	</div>
+	<!-- end footer -->
+	<script src="./js/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="./js/data.js"></script>
+	<script src="./js/main.js"></script>
+	<script type="text/javascript" src="./js/render-product.js"></script>
+	<script type="text/javascript" src="./js/sanpham.js"></script>
+	<script type="text/javascript">
+		function start(){
+			console.log(localStorage["type"]);
+			if(localStorage["type"] == null)
+				localStorage["type"] = "apple";
+
+			if(localStorage["type"] == "apple"){
+				$('.apple').addClass('active');
+			}else if(localStorage["type"] == "samsung"){
+				$('.samsung').addClass('active');
+			}
+			document.title = "Sản phẩm "+ localStorage["type"];
+			render_product(data, localStorage["type"]);
+			$(".space").hide();
+		}
+		start();
+		
+	</script>
+</body>
+</html>

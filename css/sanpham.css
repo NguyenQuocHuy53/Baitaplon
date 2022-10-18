@@ -1,0 +1,41 @@
+
+.HANG{
+    
+    display: table-cell;
+    vertical-align: middle;
+    text-align: left;
+
+}
+
+.filter{
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.filter button{
+    padding: 10px 20px;
+    border: 1px solid #a0a0a0;
+    border-radius: 5px;
+}
+
+.product{
+    display: none;
+}
+
+.product.active{
+    display: block;
+}
+
+.GiaTien{
+
+    text-align: right;
+    display: table-cell;
+    vertical-align: middle;
+    background: 0;
+}
+
+.HANG h4{
+    font-size: 50px;
+    color: #3ce408;
+
+}

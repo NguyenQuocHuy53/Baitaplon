@@ -1,0 +1,52 @@
+.main > div{
+	background-color: #eee;
+}
+
+.product-info{
+	text-align: left;
+}
+
+.product-info > div{
+	padding: 10px;
+	margin-bottom: 15px;
+	border-bottom: 1px solid white;
+}
+
+.product-info > div > div{
+	display: inline-block;
+}
+
+.product-info img{
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.product-info p{
+	margin-bottom: 0;
+}
+
+.sl-color{
+	width: auto;
+    display: inline-block;
+}
+
+.section-total{
+	padding: 10px 20px;
+	border-bottom: 1px solid white;
+}
+
+.section-total > table{
+	width: 100%;
+}
+
+.section-total > div > p{
+	display: inline-block;
+}
+.dathang{
+	padding: 15px;
+	border-top: 1px solid white;
+}
+
+.dathang > button{
+	margin: 0;
+}

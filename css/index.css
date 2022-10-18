@@ -1,0 +1,21 @@
+.list-product > div{
+	/*display: inline-block;*/
+}
+
+.list-khuyenmai{
+	padding: 0;
+	margin: auto;
+	display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    
+}
+.list-khuyenmai::-webkit-scrollbar {
+	display: none;
+}
+
+.list-khuyenmai .slide{
+	scroll-snap-align: start;
+    scroll-snap-stop: always;
+}

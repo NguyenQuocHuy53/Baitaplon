@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap/bootstrap.min.css">
+	<script type="text/javascript" scr="./js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="./js/popper.min.js"></script>
+	<script type="text/javascript" src="./js/bootstrap/bootstrap.min.js"></script>
+	<script src="https://kit.fontawesome.com/e3ed4ab9af.js" crossorigin="anonymous"></script>
+    
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Jura:wght@700&family=Oi&family=Pacifico&family=Prompt&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./css/header.css">
+	<link rel="stylesheet" type="text/css" href="./css/footer.css">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link rel="stylesheet" type="text/css" href="./css/product-detail.css">
+	<style type="text/css">
+		
+	</style>
+</head>
+<body >
+	<!-- header -->
+	<div class="row header">
+		<div class="col-xl-4 col-sm-12 logo">
+			<a href="index.html"><h3>Cửa Hàng APPLE SAMSUNG chính hãng</h3></a>
+		</div>
+		<div class="col-xl-2 col-sm-12 search">
+			<form action="" onsubmit="return false">
+				<input type="text" id="txt-search" name="search" placeholder="Nội dung tìm kiếm">
+				<button type="submit" class="btn-search"><i class="fas fa-search"></i></button>
+			</form>
+			
+		</div>
+		<div class="col-xl-6 col-sm-12">
+			<ul class="menu">
+				<li><a href="#" class="sanpham" data-type="apple"><i class="fab fa-apple" style="font-size: 25px;"></i>Apple</a></li>
+				<li><a href="#" class="sanpham" data-type="samsung"><i class="fas fa-mobile-alt" style="font-size: 20px;"></i>Samsung</a></li>
+				<li class="item-giohang"><a  href="giohang.html"><i class="fas fa-shopping-cart"></i> Giỏ hàng</a></li>
+				<li><a href="gioithieu.html"><i class="fas fa-info"  style="font-size: 20px;"></i>Giới thiệu</a></li>
+			</ul>
+			<div class="btn-group user">
+				<button type="button" class="btn dropdown-toggle acction-user" data-bs-toggle="dropdown" aria-expanded="false">
+					Xin chào
+				</button>
+				<ul class="dropdown-menu">
+					<li class="item-dangky"><a class="dropdown-item a-register" href="dangky.html"><i class="fas fa-user-plus"></i> Đăng ký</a></li>
+					<li class="item-dangnhap"><a class="dropdown-item a-login" href="dangnhap.html"><i class="fas fa-sign-in-alt" style="margin-right: 3px;" ></i> Đăng nhập</a></li>
+					<li class="item-dangxuat"><hr class="dropdown-divider"></li>
+    				<li class="item-dangxuat"><a class="dropdown-item btn-logout" href="#"  style="color: #ed3237"><i class="fas fa-sign-out-alt"></i> Đăng xuất</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- end header -->
+	<!-- content -->
+	<div class="row main" style="margin-top: 20px">
+		<!-- nav -->
+		<nav aria-label="breadcrumb">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
+				<li class="breadcrumb-item"><a href="index.html">Sản phẩm</a></li>
+				<li class="breadcrumb-item active" aria-current="page"></li>
+			</ol>
+		</nav>
+		<!-- end nav -->
+		
+		<div class="row">
+			<div class="col-xl-9 col-sm-12">
+				<!-- general -->
+				<div class="row" style="margin-bottom: 20px">
+					<div class="col-lg-5 col-sm-5">
+						<img class="img-product" src="" style="width: 100%; margin-bottom: 20px;">
+					</div>
+					<div class="col-lg-7 col-sm-7 general" >
+						<div class="section-title">
+							<h3 class="product-name"></h3>
+							<p style="margin-bottom: 4px">Giá bán <span class="price"><span></span><sup>đ</sup></span></p>	
+							<p style="margin-bottom: 4px">Bảo hành 1 đổi 1 trong 12 tháng ngày nếu có lỗi phần cứng</p>
+						</div>
+						<div class="section-quantity">
+							<p>Chọn số lượng: </p>
+							<a class="btn-decrease">-</a>
+							<span class="count_buy">1</span>
+							<a class="btn-increase">+</a>
+						</div>
+						<div>
+							<p>Chọn màu: </p>
+							<div>
+								<div class="section-color" data-color="Xanh dương">
+									<button class="btn btn-color" style="background-color: #1e73be"></button>
+								</div>
+								<div class="section-color" data-color="Xanh lá">
+									<button class="btn btn-color" style="background-color: #3fdb66"></button>
+								</div>
+								<div class="section-color" data-color="Đen">
+									<button class="btn btn-color" style="background-color: #3f3f3f"></button>
+								</div>
+								<div class="section-color" data-color="Trắng">
+									<button class="btn btn-color" style="background-color: #f2f2f2"></button>
+								</div>
+								<div class="section-color active" data-color="Đỏ">
+									<button class="btn btn-color" style="background-color: #e0004a"></button>
+								</div>
+							</div>
+						</div>
+						<div class="section-promotion">
+							<h4>Khuyến mãi</h4>
+							<ul style="list-style-type:circle">
+								<li>Tặng PMH 200.000đ đặt mua online</li>
+								<li>Ưu đãi lên đến 500.000đ khi thanh toán qua VNPAY</li>
+								<li>Ưu đãi giảm ngay 300k khi mua Airpods Pro</li>
+							</ul>
+						</div>
+						<div style="border: none">
+							<a class="btn btn-mua btn-custom"><i class="fas fa-shopping-cart"></i> Mua ngay</a>
+							<a class="btn btn-add-cart btn-custom"><i class="fas fa-cart-plus"></i> Thêm vào giỏ</a>
+						</div>
+					</div>
+				</div>
+				<!-- end general -->
+
+				<!-- detail -->
+				<div class="row">
+					<!-- menu tab -->
+					<ul class="nav nav-tabs" id="detail" role="detail-list">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" data-bs-toggle="tab" data-bs-target="#specifications" role="tab" aria-controls="specifications" aria-selected="true">Thông số kỹ thuật</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" data-bs-toggle="tab" data-bs-target="#highlights" role="tab" aria-controls="highlights" aria-selected="false">Đặc điểm nổi bật</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" data-bs-toggle="tab" data-bs-target="#product-review" role="tab" aria-controls="product-review" aria-selected="false">Đánh giá sản phẩm</a>
+						</li>
+					</ul>
+					<!-- end menu tab -->
+					<div class="tab-content" id="detail-content">
+						<!-- specifications -->
+						<div class="tab-pane fade show active" id="specifications" role="tabpanel" aria-labelledby="home-tab">
+							<ul class="detail-list" style="padding: 0; margin: 10px 0">
+								<li>
+									<h4 class="label-detal">Màn hình</h4>
+									<table class="table">
+									    <tr>
+											<td>Công nghệ màn hình</td>
+											<td>OLED</td>
+									    </tr>
+									    <tr>
+											<td>Độ phân giải</td>
+											<td>2796 x 1290 Pixels</td>
+									    </tr>
+									    <tr>
+									    	<td>Màn hình rộng</td>
+											<td>6.7″-Tần số quét 120Hz</td>
+									    </tr>
+									    <tr>
+									    	<td>Mặt kính cảm ứng</td>
+											<td>Kính cường lực Ceramic Shield</td>
+									    </tr>
+									</table>
+								</li>
+								<li>
+									<h4 class="label-detal">Camera sau</h4>
+									<table class="table">
+									    <tr>
+											<td>Độ phân giải</td>
+											<td>Chính 48 MP & Phụ 12 MP, 12 MP</td>
+									    </tr>
+									    <tr>
+											<td>Quay phim</td>
+											<td>
+												4K 2160p@60fps
+												
+												FullHD 1080p@30fps
+												
+												HD 720p@30fps
+												
+												FullHD 1080p@60fps
+												
+												4K 2160p@24fps
+												
+												4K 2160p@30fps</td>
+									    </tr>
+									    <tr>
+									    	<td>Đèn Flash</td>
+											<td>Có</td>
+									    </tr>
+									    <tr>
+									    	<td>Tính năng</td>
+											<td>Trôi nhanh thời gian (Time Lapse)
+
+												Quay chậm (Slow Motion)
+												
+												Chống rung quang học (OIS)
+												
+												Toàn cảnh (Panorama)
+												
+												Xóa phông
+												
+												Ban đêm (Night Mode)
+												
+												Hiệu ứng Bokeh
+												
+												Smart HDR 4
+												
+												Góc siêu rộng (Ultrawide)
+												
+												Cinematic</td>
+									    </tr>
+									</table>
+								</li>
+								<li>
+									<h4 class="label-detal">Camera trước</h4>
+									<table class="table">
+										<tr>
+											<td>Độ phân giải</td>
+											<td>12 MP</td>
+										</tr>
+										<tr>
+											<td>Videocall</td>
+											<td>Có</td>
+										</tr>
+										<tr>
+									    	<td>Tính năng</td>
+											<td>Xóa phông, Quay phim 4K, Nhãn dán (AR Stickers), Retina, Flash, Quay video HD, Nhận diện khuôn mặt, Quay video Full HD, Tự động lấy nét (AF)HDR, Quay chậm (Slow Motion)</td>
+									    </tr>
+								    </table>
+								</li>
+								
+
+								<li>
+									<h4 class="label-detal">Hệ điều hành & CPU</h4>
+									<table class="table">
+									    <tr>
+											<td>Hệ điều hành</td>
+											<td>iOS 16</td>
+									    </tr>
+									    <tr>
+											<td>Chip xử lý (CPU)</td>
+											<td>Apple A16 Bionic 6 nhân</td>
+									    </tr>
+									    <tr>
+									    	<td>Tốc độ CPU</td>
+											<td>2 nhân 3.1 GHz & 4 nhân 1.8 GHz</td>
+									    </tr>
+									    <tr>
+									    	<td>Chip đồ họa (GPU)</td>
+											<td>Apple GPU 6 nhân</td>
+									    </tr>
+									</table>
+								</li>
+							</ul>
+						</div>
+						<!-- end specifications -->
+						<!-- highlights -->
+						<div class="tab-pane fade" id="highlights" role="tabpanel" aria-labelledby="profile-tab">
+							<div class="characteristics">
+								<h2 style="margin-bottom: 15px">iPhone 14 Pro max&nbsp;512 GB&nbsp;Cuối cùng thì chiếc iPhone 14 Pro Max cũng đã chính thức lộ diện tại sự kiện ra mắt thường niên vào ngày 08/09 đến từ nhà Apple&nbsp;kết thúc bao lời đồn đoán bằng một bộ thông số cực kỳ ấn tượng cùng vẻ ngoài đẹp mắt sang trọng. Từ ngày 14/10/2022 người dùng đã có thể mua sắm các sản phẩm iPhone 14 series với đầy đủ phiên bản</h2>
+								<h3>Thiết kế cao cấp và vẻ ngoài sành điệu</h3>
+								<p>Sản phẩm có trong mình một diện mạo bắt mắt nhờ lối tạo hình vuông vức bắt trend tương tự thế hệ iPhone 13 series, đây được xem là kiểu thiết kế rất thành công trên các đời thế hệ trước khi tạo nên cơn sốt toàn cầu về kiểu dáng thiết kế điện thoại cho đến nay. </p>
+								<p>Mặt lưng làm từ kính cùng khung thép không gỉ giúp cho iPhone có thêm độ bền bỉ để đồng hành cùng bạn được lâu dài hơn, không những thế nó còn làm cho thiết bị của bạn trở nên sang trọng và đẳng cấp hơn.</p>
+								<h3>Đột phá với thiết kế Dynamic island</h3>
+								<p>Để tối ưu được không gian hiển thị thì Apple cũng đã chính thức loại bỏ tai thỏ huyền thoại để thay thế vào đó là kiểu bố trí hình viên thuốc độc đáo, vừa đem lại vùng hiển thị rộng rãi hơn mà đây còn là một đặc điểm nhận diện dễ dàng trên chiếc iPhone 14 Pro Max.</p>
+								<p>Đây được xem là một điểm mới về phần màn hình trên dòng sản phẩm Pro Max năm nay vì cụm tai thỏ đã được lược bỏ và thay thế vào đó là thiết kế hình notch viên thuốc, đi kèm với đó sẽ là tính năng Dynamic Island để biến cụm này trở nên thú vị hơn qua những thông báo hay thông tin trạng thái.</p>
+								<h3>iPhone 14 Pro Max với nhiều màu sắc rực rỡ</h3>
+								<h4>Tím - iPhone 14 Pro Max Deep Purple</h4>
+								<p>Một điểm đặc biệt trên phiên bản này là màu Deep Purple (tím nhạt) mới chưa từng có trên những phiên bản trước đây, vì thế đây chắc hẳn là một đặc điểm nhận diện dễ dàng trên iPhone 14 Pro Max, điều này giúp bạn trở thành một người dùng rất có sức hút khi sở hữu cho mình một thiết bị mới nhất đến từ nhà Apple.</p>
+								<h4>Vàng kim - Gold</h4>
+								<p>Đối với phiên bản màu vàng kim này ta thấy được một diện mạo đẳng cấp và cực kỳ sang trọng khi đi kèm với một bộ khung bóng bẩy, tất cả điều này làm cho người dùng cảm giác như máy được hoàn thiện với bộ khung từ vàng nguyên chất, mang lại một cái nhìn thời thượng hơn mỗi khi người dùng cầm nắm điện thoại trên tay.</p>
+								<h4>Bạc - Silver</h4>
+								<p>Màu bạc có lẽ là một phiên bản khá được ưa chuộng trên thị trường điện thoại iPhone trong khoảng thời gian gần đây, bởi tone màu trẻ trung cùng phong cách tối giản nên phiên bản này rất dễ phối màu với các món phụ kiện như ốp lưng hay dây đeo, cho dù món phụ kiện của bạn là màu nào đi chăng nữa thì kết quả sau khi trang bị vẫn sẽ cực kỳ ưng ý.</p>
+								<h3>Màn hình chất lượng cho những trải nghiệm xem tuyệt vời</h3>
+								<p>Máy sẽ được sử dụng công nghệ màn hình OLED với kích thước lớn lên đến 6.7 inch, mang lại không gian rộng rãi để bạn thao tác chơi game dễ dàng hơn hay thưởng thức nội dung một cách to rõ.</p>
+								<h3>iPhone 14 Pro Max sở hữu cụm cam chất lượng</h3>
+								<h4>Camera sau 48MP bắt trọn mọi khung hình cho hình ảnh sắc nét</h4>
+								<p>Về phần chụp ảnh thì sản phẩm lần này sẽ được trang bị 3 camera sau với camera chính có độ phân giải 48 MP giúp bạn bắt trọn mọi khung hình được sắc nét, bên cạnh sẽ là camera góc siêu rộng 12 MP và cảm biến cuối cùng có độ phân giải 12 MP. Đi kèm với đó sẽ là cảm biến quad-pixel cao cấp giúp nâng độ phân giải trên từng bức hình bạn chụp.</p>
+								<p>Không chỉ tăng độ phân giải camera mà lần này Apple còn nâng cao thuật toán xử lý ảnh giúp cho iPhone có thể cho ra những bức hình chụp đêm có chất lượng tốt hơn, giảm thiểu tình trạng nhiễu hạt hay lóe sáng so với những thế hệ trước đây.</p>
+								<p>Tích hợp khả năng quay video đạt chuẩn lên tới 4K HDR ở tốc độ 24, 30 khung hình/giây giúp cho người dùng có thể sở hữu được nhiều thước phim sắc nét và cực kỳ chất lượng, phù hợp với những bạn làm những công việc quay - dựng phim trên các thiết bị di động.</p>
+								<h4>Camera selfie góc rộng bắt trọn mọi khung hình</h4>
+								<p>Bên cạnh đó mặt trước được tích hợp Camera TrueDepth 12 MP có hỗ trợ Face ID, điều này để đảm bảo mọi thông tin của bạn có thể an toàn trước những kẻ xâm nhập. </p>
+							    <h3>iPhone 14 Pro Max với chip xử lý A16 Bionic mang lại sức mạnh đáng kinh ngạc</h3>
+								<p>Được trang bị bộ vi xử lý A16 Bionic sản xuất trên quy trình tiên tiến giúp cải thiện hiệu suất và giảm điện năng tiêu thụ so với thế hệ trước đó, đáp ứng hoàn hảo trong công việc cũng như trong giải trí của người dùng tốt hơn.</p>
+                                <p>Không chỉ đáp ứng tốt khả năng chơi game mà đây còn là thiết bị có thể giúp bạn xử lý nhiều công việc nhanh chóng, đặc biệt là những tác vụ xử lý và xuất video hình ảnh. Là một chiếc điện thoại RAM 6 GB nên người dùng hoàn toàn có thể an tâm hơn trên các tác vụ đa nhiệm khi mở cùng lúc nhiều ứng dụng.</p>
+								<h3>iPhone 14 Pro Max chạy hệ điều hành mới nhất iOS 16</h3>	
+								<p>Chiếc điện thoại này sẽ được hỗ trợ hệ điều hành iOS 16 kể từ khi kích hoạt máy, được bổ sung hàng loạt các tính năng mới mẻ để mang đến cho người dùng những phút giây sử dụng vô cùng thú vị.</p>
+								<h3>Pin đáp ứng đủ cho cả ngày dài</h3>
+								<p>Bên trong điện thoại iPhone sẽ được tích hợp viên pin có dung lượng lớn nên người dùng có thể an tâm hơn trong việc sử dụng máy phục vụ các tác vụ cơ bản cả ngày. Đi kèm với đó sẽ là công nghệ sạc nhanh giúp bạn có thể tối ưu được kha khá thời gian chờ đợi thiết bị nạp đầy.</p>
+								<p>Hãng công bố iPhone 14 Pro Max có khả năng duy trì việc xem video liên tục trong 29 giờ, quả thực là con số rất ấn tượng để đáp ứng tốt các nhu cầu giải trí cho dành cho bạn.</p>
+								<h3>Đáp ứng mọi nhu cầu lưu trữ với nhiều phiên bản bộ nhớ</h3>
+								<p>Bên cạnh phiên bản 128 GB thông thường thì lần ra mắt này Apple còn đưa đến tay người dùng thêm 3 sự lựa chọn như: 256 GB, 512 GB và 1 TB, điều này nhằm đáp ứng các nhu nhu cầu lưu trữ thông tin với số lượng lớn để đáp ứng công việc của bạn tốt hơn.</p>
+								<h3>Vì sao bạn nên chọn mua iPhone 14 Pro Max?</h3>
+								<p>Nhờ được trang bị một con chip có hiệu năng mạnh mẽ và mới nhất đến từ Apple nên iPhone 14 Pro Max có thể sẽ đem lại cho người dùng sự mượt mà trên mọi tác vụ sử dụng, đi kèm đó sẽ là cụm camera có khả năng ghi hình siêu sắc nét và thu lại những thước phim mượt mà ổn định.</p>
+								<p>Đây chắc hẳn là một chiếc điện thoại rất phù hợp cho những bạn đang làm các công việc chuyên về sáng tạo nội dung chơi game hay nhiếp ảnh. Ngoài ra khi cầm trên tay chiếc iPhone 14 Pro Max thì người dùng cũng được toát lên một vẻ ngoài cực kỳ sang trọng và đẳng cấp khi sở hữu cho mình một sản phẩm mới nhất đến từ nhà Apple.</p>
+								<p>Với một con chip có hiệu năng đỉnh cao được trang bị cùng khả năng quay phim chụp ảnh sắc nét trên iPhone 14 Pro Max, giúp cho đây hứa hẹn sẽ trở thành chiếc smartphone gây được sự chú ý và săn đón nhất thị trường di động trong năm 2022.</p>
+							</div>
+						</div>
+						<!-- end highlights -->
+						<!-- review  -->
+						<div class="tab-pane fade" id="product-review" role="tabpanel" aria-labelledby="contact-tab">
+							<h4>50 Đánh giá <span class="phone-name">iPhone 14 Promax (VN/A)</span></h4>
+							<!-- overview -->
+							<div class="row overview">
+								<div class="col-xl-2 col-sm-2" style="border-right: 1px solid #eee">
+									<h2>4.7 <i class="fas fa-star"></i></h2>
+								</div>
+								<div class="col-xl-5 col-sm-6" style="border-right: 1px solid #eee">
+									<ul>
+										<li>
+											5 <i class="fas fa-star"></i>
+											<div class="process-bar">
+												<div class="below"></div>
+												<div class="slide-bar" style="width: 74%"></div>
+											</div>
+											<span class="count-review">37</span> đánh giá
+										</li>
+										<li>
+											4 <i class="fas fa-star"></i>
+											<div class="process-bar">
+												<div class="below"></div>
+												<div class="slide-bar" style="width: 12%"></div>
+											</div>
+											<span class="count-review">6</span> đánh giá
+										</li>
+										<li>
+											3 <i class="fas fa-star"></i> 
+											<div class="process-bar">
+												<div class="below"></div>
+												<div class="slide-bar" style="width: 6%"></div>
+											</div>
+											<span class="count-review">3</span> đánh giá
+										</li>
+										<li>
+											2 <i class="fas fa-star"></i> 
+											<div class="process-bar">
+												<div class="below"></div>
+												<div class="slide-bar" style="width: 4%"></div>
+											</div>
+											<span class="count-review">2</span> đánh giá
+										</li>
+										<li>
+											1 <i class="fas fa-star"></i> 
+											<div class="process-bar">
+												<div class="below"></div>
+												<div class="slide-bar" style="width: 4%"></div>
+											</div>
+											<span class="count-review">2</span> đánh giá
+										</li>
+									</ul>
+								</div>
+								<div class="col-xl-5 col-sm-4">
+									<div class="evaluate" style="padding-top: 25px;">
+										<div class="section-review">
+											<!-- reversed -->
+											<a class="btn-star star5" data-star="5"><i class="fas fa-star"></i></a>
+											<a class="btn-star star4" data-star="4"><i class="fas fa-star"></i></a>
+											<a class="btn-star star3" data-star="3"><i class="fas fa-star"></i></a>
+											<a class="btn-star star2" data-star="2"><i class="fas fa-star"></i></a>
+											<a class="btn-star star1" data-star="1"><i class="fas fa-star"></i></a>
+										</div>
+										<button class="btn btn-primary btn-vote" data-star="0">Gửi đánh giá</button>
+										
+										
+									</div>
+								</div>
+							</div>
+							<!-- end overview -->
+							<!-- comment -->
+							<div class="row section-comment">
+								
+								
+								<div class="comment">
+									<h5>nguyenhuy</h5>
+									
+									<div class="star-vote" data-star="2">
+										<div class="section-review">
+											<i class="fas fa-star" style="color: #fd9727"></i>
+											<i class="fas fa-star" style="color: #fd9727"></i>
+											<i class="fas fa-star" style="color: #fd9727"></i>
+											<i class="fas fa-star" style="color: #fd9727"></i>
+											<i class="fas fa-star" style="color: #fd9727"></i>
+										</div>
+									</div>
+									<p>Ngon,bổ,rẻ</p>
+									<div class="">
+										<a class="btn-thaoluan" style="color: #ed3237;margin-right: 10px" data-active="0">2 thảo luận</a>
+										<a class="btn-huuich" style="color: #ed3237;margin-right: 10px" data-active="0"><i class="far fa-thumbs-up active"></i> <i class="fas fa-thumbs-up"></i> Hữu ích</a>
+										<p>2 tuần trước</p>
+									</div>
+									<div class="reply">
+										<ul>
+											<li>
+												<h6>minhquan</h6>
+												<p>Oke!</p>
+												<div>
+													<a class="btn-huuich" style="color: #ed3237;margin-right: 10px" data-active="0"><i class="far fa-thumbs-up active"></i> <i class="fas fa-thumbs-up"></i> Hữu ích</a>
+													<p>2 tuần trước</p>
+												</div>
+											</li>
+											
+										</ul>
+										<div class="add-comment">
+											<textarea class="col-xl-6 col-sm-6 col-12" name="content"></textarea>
+											<button class="btn btn-primary btn-reply">Gửi</button>
+										</div>
+									</div>
+								</div>
+
+								<div class="comment">
+									<h5>Trung</h5>
+									
+									<div class="star-vote" data-star="2">
+										<div class="section-review">
+											<i class="fas fa-star" style="color: #fd9727"></i>
+											<i class="fas fa-star" style="color: #fd9727"></i>
+											<i class="fas fa-star" style="color: #fd9727"></i>
+											<i class="fas fa-star" style="color: #fd9727"></i>
+											<i class="fas fa-star" style="color: #fd9727"></i>
+										</div>
+									</div>
+									<p>Xài rất ok rất mượt nhưng để qua đêm bị tụt vài phần trâm pin nhân viên chia sẽ nhiệt tình</p>
+									<div class="">
+										<a class="btn-thaoluan" style="color: #ed3237;margin-right: 10px" data-active="0">Thảo luận</a>
+										<a class="btn-huuich" style="color: #ed3237;margin-right: 10px" data-active="0"><i class="far fa-thumbs-up active"></i> <i class="fas fa-thumbs-up"></i> Hữu ích</a>
+										<p>2 tuần trước</p>
+									</div>
+									<div class="reply">
+										<ul>
+											
+										</ul>
+										<div class="add-comment">
+											<textarea class="col-xl-6 col-sm-6 col-12" name="content"></textarea>
+											<button class="btn btn-primary btn-reply">Gửi</button>
+										</div>
+									</div>
+
+								</div>
+								<div class="comment">
+									<h5>Ánh</h5>
+									
+									<div class="star-vote" data-star="2">
+										<div class="section-review">
+											<i class="fas fa-star" style="color: #fd9727"></i>
+											<i class="fas fa-star" style="color: #fd9727"></i>
+											<i class="fas fa-star" style="color: #fd9727"></i>
+											<i class="fas fa-star" style="color: #fd9727"></i>
+											<i class="fas fa-star" style="color: #fd9727"></i>
+										</div>
+									</div>
+									<p>máy pin trâu nhân viên tư vấn nhiệt tình mình rất thích cách phục này cảm ơn !</p>
+									<div class="">
+										<a class="btn-thaoluan" style="color: #ed3237;margin-right: 10px" data-active="0">Thảo luận</a>
+										<a class="btn-huuich" style="color: #ed3237;margin-right: 10px" data-active="0"><i class="far fa-thumbs-up active"></i> <i class="fas fa-thumbs-up"></i> Hữu ích</a>
+										<p>2 tuần trước</p>
+									</div>
+									<div class="reply">
+										<ul>
+											
+										</ul>
+										<div class="add-comment">
+											<textarea class="col-xl-6 col-sm-6 col-12" name="content"></textarea>
+											<button class="btn btn-primary btn-reply">Gửi</button>
+										</div>
+									</div>
+
+								</div>
+								
+							</div>
+							<div class="add-comment">
+								<div>
+									<textarea class="col-xl-6 col-sm-6 col-12" name="content"></textarea>
+									<div>
+										<button class="btn btn-primary btn-comment">Gửi</button>
+									</div>
+								</div>
+							</div>
+							<!-- end comment -->
+						</div>
+						<!-- end review  -->
+					</div>
+				</div>
+				<!-- end detail -->
+			</div>
+			<!-- relate product -->
+			<div class="sec-relate col-xl-3 col-sm-12">
+				<div class="relate">
+					<h4>Sản phẩm tương tự</h4>
+					<hr class="row" style="color: #908f8f; height: 2px;margin-bottom: 0;">
+					<div class="row">
+						<div class="col-lg-4">
+							<a href="chitietsanpham.html?id=2">
+								<img src="./images/product/iPhone-12-mini-trang-160x160.png">
+							</a>
+						</div>
+						
+						<div class="col-lg-8">
+							<h5><a href="chitietsanpham.html?id=2">iPhone 12 Mini 128GB (Hàng công ty VN/A)</a></h5>
+							<p>18.990.000<sup>đ</sup></p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-4">
+							<a href="chitietsanpham.html?id=3">
+								<img src="./images/product/iPhone-12-64GB-blue-160x160.png">
+							</a>
+						</div>
+						<div class="col-lg-8">
+							<h5><a href="chitietsanpham.html?id=3">iPhone 12 64GB (Hàng công ty VN/A)</a></h5>
+							<p>18.990.000<sup>đ</sup></p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-4">
+							<a href="chitietsanpham.html?id=4">
+								<img  src="./images/product/iPhone-12-64GB-Green-160x160.png">
+							</a>	
+						</div>
+						<div class="col-lg-8">
+							<h5><a href="chitietsanpham.html?id=4">iPhone 12 128GB (Hàng công ty VN/A)</a></h5>
+							<p>18.990.000<sup>đ</sup></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end relate product -->
+		</div>
+		<!-- notification -->
+		<div class="sec-notification ">
+			
+		</div>
+		<!-- end notification -->
+	</div>
+	<!-- end content -->
+	<!-- footer -->
+	<div class="row footer">
+		<div class="col-sm-3 col-3">
+		<h4>Liên kết chính</h4>
+			<p><a href="index.html">Trang chủ</a></p>
+			<p><a href="gioithieu.html">Giới thiệu</a></p>
+			<p><a href="sanpham.html">Sản phẩm</a></p>
+			<p><a href="dangky.html">Đăng ký</a></p>
+			
+			<p></p>
+		</div>
+		<div class="col-sm-3 col-3">
+			<h4>Liên kết phụ</h4>
+			<p><a href="timkiem.html">Tìm kiếm</a></p>
+			<p><a href="giohang.html">Giỏ hàng</a></p>
+			<p><a href="dangnhap.html">Đăng nhập</a></p>
+			<p></p>
+		</div>
+		<div class="col-sm-3 col-3">
+			<h4>Thông tin liên lạc</h4>
+			<p>Gọi mua hàng: <a href="tel:1900 90 90 90">1900 90 90 90</a></p>
+			<p>Khiếu nại, góp ý: <a href="tel:1900 90 90 90">1900 90 90 90</a></p>
+			<p>Thời gian phục vụ: 8h - 22h</p>
+			<p>Email: <a href="mailto:nguyenhuy3684@gmail.com">nhom25</a></p>
+		</div>
+		<div class="col-sm-3 col-3">
+			<h4>Thông tin hỗ trợ</h4>
+			<p><a href="#">Bảo hành chính hãng</a></p>
+			<p><a href="#">Chính sách đổi trả</a></p>
+			<p><a href="#">Chính sách bảo hành</a></p>
+			<p></p>
+		</div>
+	</div>
+	<!-- end footer -->
+
+
+	<script src="./js/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="./js/data.js"></script>
+	<script src="./js/main.js"></script>
+	<script src="./js/chitietsanpham.js"></script>
+	</script>
+	<script type="text/javascript">
+		url = window.location.href;
+		function start(){
+			params = getParams(url);
+			product = get_product(params["id"]);
+			render_product(product);
+			console.log(localStorage["username"]);
+		}
+		start();
+		
+	</script>
+</body>
+</html>

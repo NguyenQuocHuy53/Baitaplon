@@ -1,0 +1,49 @@
+
+.main > div{
+	text-align: left;
+}
+
+.main h2{
+	color: #80ca1e;
+}
+
+.main h4{
+	padding: 5px;
+	background-color: #eee;
+}
+
+.general > p{
+	padding-left: 5px;
+	margin-bottom: 5px;
+}
+
+.table > tbody > tr > td:nth-child(2){
+	text-align: right;
+}
+
+.list-product{
+	border-bottom: 2px solid #eee;
+}
+
+.item{
+	margin: 0;
+}
+
+.item > div{
+	display: inline-block;
+}
+
+.item img{
+	width: 100%;
+}
+
+.item p {
+	margin: 0;
+}
+
+.return{
+	margin-top: 30px;
+    text-align: center;
+}
+
+
